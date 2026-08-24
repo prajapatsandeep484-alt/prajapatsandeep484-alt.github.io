@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description"
-content="Sun Stones Hyderabad - Premium Granite & Quartz">
+<meta name="description" content="Sun Stones Hyderabad - Premium Granite, Tiles & Quartz">
 
-<title>Sun Stones Hyderabad | Granite & Quartz</title>
+<title>Sun Stones Hyderabad | Granite, Tiles & Quartz</title>
 
 <style>
+
 :root{
   --dark:#111313;
   --gold:#b88a3b;
@@ -62,7 +62,7 @@ header{
   position:sticky;
   top:0;
   z-index:100;
-  background:rgba(255,255,255,.96);
+  background:rgba(255,255,255,.97);
   backdrop-filter:blur(10px);
   border-bottom:1px solid var(--border);
 }
@@ -105,7 +105,7 @@ header{
 
 .menu{
   display:flex;
-  gap:25px;
+  gap:23px;
   font-size:14px;
   font-weight:bold;
 }
@@ -191,7 +191,7 @@ header{
   color:#111;
 }
 
-/* SECTIONS */
+/* COMMON SECTIONS */
 
 section{
   padding:75px 0;
@@ -199,7 +199,7 @@ section{
 
 .heading{
   text-align:center;
-  max-width:700px;
+  max-width:750px;
   margin:0 auto 40px;
 }
 
@@ -270,10 +270,116 @@ section{
   color:var(--muted);
 }
 
+/* GRANITE VARIETIES */
+
+.varieties{
+  background:#fff;
+}
+
+.granite-list{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:13px;
+}
+
+.granite-card{
+  background:#f8f6f1;
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:17px 12px;
+  text-align:center;
+  font-weight:bold;
+  font-size:14px;
+  transition:.3s;
+}
+
+.granite-card:hover{
+  background:var(--dark);
+  color:#fff;
+  border-color:var(--dark);
+  transform:translateY(-3px);
+}
+
+.granite-card.special{
+  background:var(--gold);
+  color:#fff;
+  border-color:var(--gold);
+}
+
+/* PRODUCT DETAILS */
+
+.product-details{
+  background:var(--light);
+}
+
+.details-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.detail-box{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:15px;
+  padding:28px;
+  text-align:center;
+}
+
+.detail-icon{
+  color:var(--gold);
+  font-size:28px;
+}
+
+.detail-box h3{
+  font-family:Georgia,serif;
+  font-size:24px;
+  margin:10px 0;
+}
+
+.detail-box p{
+  color:var(--muted);
+  line-height:1.7;
+  font-size:14px;
+}
+
+.thickness{
+  margin-top:30px;
+  background:var(--dark);
+  color:#fff;
+  border-radius:15px;
+  padding:25px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  text-align:center;
+  gap:20px;
+}
+
+.thickness div{
+  border-right:1px solid #ffffff22;
+}
+
+.thickness div:last-child{
+  border:0;
+}
+
+.thickness span{
+  display:block;
+  color:#aaa;
+  font-size:10px;
+  letter-spacing:1.5px;
+  margin-bottom:8px;
+}
+
+.thickness strong{
+  color:#e0bd76;
+  font-size:18px;
+}
+
 /* GALLERY */
 
 .gallery{
-  background:var(--light);
+  background:#fff;
 }
 
 .gallery-grid{
@@ -462,6 +568,24 @@ footer{
     grid-template-columns:1fr;
   }
 
+  .granite-list{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .details-grid{
+    grid-template-columns:1fr;
+  }
+
+  .thickness{
+    grid-template-columns:1fr;
+  }
+
+  .thickness div{
+    border-right:0;
+    border-bottom:1px solid #ffffff22;
+    padding-bottom:15px;
+  }
+
   .gallery-grid{
     grid-template-columns:1fr 1fr;
   }
@@ -511,35 +635,44 @@ footer{
     font-size:32px;
   }
 }
+
 </style>
 </head>
 
 <body>
 
-<!-- TOP -->
+<!-- TOP BAR -->
+
 <div class="top">
   <div class="container">
-    <span>Premium Granite & Quartz • Hyderabad</span>
+    <span>Premium Granite • Tiles • Quartz • Hyderabad</span>
     <span>Quality that stands the test of time</span>
   </div>
 </div>
 
+
 <!-- HEADER -->
+
 <header>
+
 <div class="container nav">
 
-  <a href="#" class="logo">
+  <a href="#home" class="logo">
+
     <div class="logo-box">SS</div>
+
     <div>
       <b>Sun Stones</b>
       <small>HYDERABAD</small>
     </div>
+
   </a>
 
   <nav class="menu">
     <a href="#home">Home</a>
     <a href="#about">About</a>
-    <a href="#granites">Granites</a>
+    <a href="#varieties">Varieties</a>
+    <a href="#granites">Photos</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -548,12 +681,16 @@ footer{
   </a>
 
 </div>
+
 </header>
 
+
 <!-- HERO -->
+
 <section class="hero" id="home">
 
 <div class="container">
+
 <div class="hero-content">
 
   <div class="tag">PREMIUM STONE COLLECTION</div>
@@ -564,14 +701,14 @@ footer{
   </h1>
 
   <p>
-    Explore premium natural granite slabs for kitchens,
+    Premium granite, tiles and quartz for kitchens,
     flooring, stairs, countertops and beautiful interiors.
   </p>
 
   <div class="buttons">
 
-    <a class="btn gold" href="#granites">
-      View Granite Collection
+    <a class="btn gold" href="#varieties">
+      View Granite Varieties
     </a>
 
     <a class="btn white"
@@ -583,11 +720,14 @@ footer{
   </div>
 
 </div>
+
 </div>
 
 </section>
 
+
 <!-- ABOUT -->
+
 <section id="about">
 
 <div class="container about">
@@ -606,26 +746,32 @@ footer{
     </h2>
 
     <p>
-      Discover a beautiful collection of natural granite slabs
-      selected for modern homes, kitchens, stairs, flooring,
-      countertops and commercial projects.
+      Sun Stones has been serving customers since May 2017,
+      offering a wide range of granite, tiles and quartz for
+      residential and commercial requirements.
+    </p>
+
+    <p>
+      Our granite collection includes a wide variety of colours,
+      patterns and finishes suitable for kitchens, countertops,
+      flooring, stairs and other interior applications.
     </p>
 
     <div class="points">
 
       <div class="point">
         <b>◆ Premium</b>
-        <small>Selected natural stones</small>
+        <small>Quality natural stones</small>
       </div>
 
       <div class="point">
         <b>◈ Durable</b>
-        <small>Built for long-lasting use</small>
+        <small>Long-lasting materials</small>
       </div>
 
       <div class="point">
-        <b>✦ Collection</b>
-        <small>Multiple colours & patterns</small>
+        <b>✦ Variety</b>
+        <small>Wide range of colours</small>
       </div>
 
     </div>
@@ -636,20 +782,170 @@ footer{
 
 </section>
 
-<!-- GRANITE GALLERY -->
+
+<!-- GRANITE VARIETIES -->
+
+<section id="varieties" class="varieties">
+
+<div class="container">
+
+<div class="heading">
+
+  <span>OUR GRANITE RANGE</span>
+
+  <h2>Granite Varieties</h2>
+
+  <p>
+    We offer a wide range of granite colours and varieties.
+    Availability may vary according to stock and order requirements.
+  </p>
+
+</div>
+
+<div class="granite-list">
+
+  <div class="granite-card">Tan Brown</div>
+  <div class="granite-card">Tan Blue</div>
+  <div class="granite-card">Safari Blue</div>
+  <div class="granite-card">Royal Blue</div>
+  <div class="granite-card">Coffee Brown</div>
+  <div class="granite-card">Reddish Tan Brown</div>
+  <div class="granite-card">Rossy Pink</div>
+  <div class="granite-card">Chima Pink</div>
+  <div class="granite-card">P White</div>
+  <div class="granite-card">Shell White</div>
+  <div class="granite-card">M White</div>
+  <div class="granite-card">Black Pearl</div>
+  <div class="granite-card">Z Black</div>
+  <div class="granite-card">T Black</div>
+  <div class="granite-card">Sira Grey</div>
+  <div class="granite-card">Mudgal Grey</div>
+  <div class="granite-card">Antique</div>
+  <div class="granite-card">Bhama Gold</div>
+  <div class="granite-card">Paradise</div>
+  <div class="granite-card">Vishcon White</div>
+  <div class="granite-card">Kupam</div>
+  <div class="granite-card">Moon White</div>
+  <div class="granite-card">Star White</div>
+  <div class="granite-card">SK Blue</div>
+  <div class="granite-card">Chida White</div>
+  <div class="granite-card">River White</div>
+  <div class="granite-card">China White</div>
+
+  <div class="granite-card special">
+    + All Types of Granite Available
+  </div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PRODUCT DETAILS -->
+
+<section class="product-details">
+
+<div class="container">
+
+<div class="heading">
+
+  <span>OUR PRODUCTS</span>
+
+  <h2>Granite • Tiles • Quartz</h2>
+
+  <p>
+    Materials for residential, commercial and interior requirements.
+  </p>
+
+</div>
+
+<div class="details-grid">
+
+  <div class="detail-box">
+
+    <div class="detail-icon">◈</div>
+
+    <h3>Granite</h3>
+
+    <p>
+      Wide range of natural granite colours and patterns
+      for residential and commercial applications.
+    </p>
+
+  </div>
+
+
+  <div class="detail-box">
+
+    <div class="detail-icon">◆</div>
+
+    <h3>Tiles</h3>
+
+    <p>
+      Tiles available for different interior and construction
+      requirements.
+    </p>
+
+  </div>
+
+
+  <div class="detail-box">
+
+    <div class="detail-icon">✦</div>
+
+    <h3>Quartz</h3>
+
+    <p>
+      Quartz available for modern kitchens, countertops
+      and interior applications.
+    </p>
+
+  </div>
+
+</div>
+
+
+<div class="thickness">
+
+  <div>
+    <span>STANDARD THICKNESS</span>
+    <strong>18 MM</strong>
+  </div>
+
+  <div>
+    <span>OTHER THICKNESS</span>
+    <strong>As per order</strong>
+  </div>
+
+  <div>
+    <span>ESTABLISHED</span>
+    <strong>May 2017</strong>
+  </div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PHOTO GALLERY -->
+
 <section class="gallery" id="granites">
 
 <div class="container">
 
 <div class="heading">
 
-  <span>OUR COLLECTION</span>
+  <span>OUR PHOTOS</span>
 
-  <h2>Granite Slabs</h2>
+  <h2>Granite Gallery</h2>
 
   <p>
-    Browse our granite collection.
-    Tap any image to view it in full screen.
+    Explore our granite collection through the photos below.
+    Tap any photo to view it in full screen.
   </p>
 
 </div>
@@ -660,12 +956,15 @@ footer{
 
 </section>
 
+
 <!-- CTA -->
+
 <section class="cta">
 
 <div class="container cta-box">
 
 <div>
+
   <span style="color:#d8b36d;font-size:12px;font-weight:bold;letter-spacing:2px;">
     NEED A QUOTE?
   </span>
@@ -673,9 +972,10 @@ footer{
   <h2>Let's find the right stone.</h2>
 
   <p>
-    Send us the granite photo/name and required quantity
+    Send us the granite name, size and required quantity
     on WhatsApp for enquiry.
   </p>
+
 </div>
 
 <div class="buttons">
@@ -696,7 +996,9 @@ target="_blank">
 
 </section>
 
+
 <!-- CONTACT -->
+
 <section id="contact">
 
 <div class="container">
@@ -708,10 +1010,11 @@ target="_blank">
 <h2>Contact Sun Stones</h2>
 
 <p>
-For granite enquiries, availability and pricing.
+For granite, tiles and quartz enquiries, availability and pricing.
 </p>
 
 </div>
+
 
 <div class="contact">
 
@@ -732,11 +1035,19 @@ sandeepsandeep0000001@gmail.com
 </div>
 
 <div class="detail">
-<small>LOCATION</small>
-Hyderabad, Telangana
+<small>ADDRESS</small>
+Hyderabad Vijayawada Highway,<br>
+Hayathnagar, Hyderabad,<br>
+Telangana - 501505
+</div>
+
+<div class="detail">
+<small>BUSINESS HOURS</small>
+Open 24 Hours
 </div>
 
 </div>
+
 
 <div class="card">
 
@@ -744,7 +1055,7 @@ Hyderabad, Telangana
 
 <p style="color:#70706b;line-height:1.7;">
 For a fast response, WhatsApp us with the
-granite photo/name, size and required quantity.
+granite name/photo, size and required quantity.
 </p>
 
 <a class="btn gold"
@@ -761,18 +1072,20 @@ Start WhatsApp Chat
 
 </section>
 
+
 <!-- FOOTER -->
+
 <footer>
 
 <div class="container footer">
 
 <div>
 <strong>Sun Stones Hyderabad</strong><br>
-<small>Granite & Quartz</small>
+<small>Granite • Tiles • Quartz</small>
 </div>
 
 <small>
-© 2026 Sun Stones. All rights reserved.
+Quality that stands the test of time
 </small>
 
 </div>
@@ -780,7 +1093,8 @@ Start WhatsApp Chat
 </footer>
 
 
-<!-- IMAGE FULLSCREEN -->
+<!-- LIGHTBOX -->
+
 <div class="lightbox" id="lightbox" onclick="closeImage()">
 
 <div class="close">×</div>
@@ -792,7 +1106,7 @@ Start WhatsApp Chat
 
 <script>
 
-/* ALL YOUR GRANITE PHOTOS */
+/* PHOTO LIST */
 
 const photos = [
 
@@ -902,4 +1216,4 @@ document.addEventListener("keydown",function(e){
 </script>
 
 </body>
-    </html>
+  </html>
