@@ -4,473 +4,902 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<meta name="description"
+content="Sun Stones Hyderabad - Premium Granite & Quartz">
+
 <title>Sun Stones Hyderabad | Granite & Quartz</title>
 
 <style>
+:root{
+  --dark:#111313;
+  --gold:#b88a3b;
+  --light:#f7f4ee;
+  --white:#fff;
+  --text:#171817;
+  --muted:#70706b;
+  --border:#e6dfd3;
+}
+
 *{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
 }
 
 body{
-    font-family:Arial, sans-serif;
-    background:#f5f5f5;
-    color:#222;
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--text);
+  background:#fbfaf7;
 }
 
-header{
-    background:#171717;
-    color:white;
-    padding:25px 5%;
-}
-
-.header{
-    max-width:1200px;
-    margin:auto;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:20px;
-}
-
-.logo{
-    font-size:30px;
-    font-weight:bold;
-    color:#d9a441;
-}
-
-.tagline{
-    font-size:14px;
-    color:#ddd;
-    margin-top:5px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:20px;
-    font-size:15px;
-}
-
-nav a:hover{
-    color:#d9a441;
-}
-
-.hero{
-    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-    url("IMG-20260729-WA0001.jpg") center/cover;
-    min-height:430px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    color:white;
-    padding:30px;
-}
-
-.hero h1{
-    font-size:48px;
-    margin-bottom:15px;
-}
-
-.hero p{
-    font-size:20px;
+a{
+  text-decoration:none;
+  color:inherit;
 }
 
 .container{
-    width:92%;
-    max-width:1200px;
-    margin:50px auto;
+  width:min(1180px,92%);
+  margin:auto;
 }
 
-.section-title{
-    text-align:center;
-    margin-bottom:35px;
+/* TOP BAR */
+
+.top{
+  background:var(--dark);
+  color:#fff;
+  padding:9px 0;
+  font-size:12px;
 }
 
-.section-title h2{
-    font-size:32px;
-    color:#222;
+.top .container{
+  display:flex;
+  justify-content:space-between;
 }
 
-.section-title p{
-    color:#666;
-    margin-top:8px;
+/* HEADER */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--border);
 }
+
+.nav{
+  height:75px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.logo-box{
+  width:45px;
+  height:45px;
+  border-radius:12px;
+  background:linear-gradient(135deg,#111,#555);
+  color:#fff;
+  display:grid;
+  place-items:center;
+  font-weight:bold;
+}
+
+.logo b{
+  font-size:18px;
+}
+
+.logo small{
+  display:block;
+  color:var(--gold);
+  font-size:9px;
+  letter-spacing:2px;
+  margin-top:3px;
+}
+
+.menu{
+  display:flex;
+  gap:25px;
+  font-size:14px;
+  font-weight:bold;
+}
+
+.menu a:hover{
+  color:var(--gold);
+}
+
+.call{
+  background:var(--dark);
+  color:#fff;
+  padding:12px 18px;
+  border-radius:8px;
+  font-size:13px;
+  font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+  min-height:650px;
+  display:flex;
+  align-items:center;
+  background:
+  linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.35)),
+  url("IMG-20260729-WA0001.jpg") center/cover;
+}
+
+.hero-content{
+  max-width:700px;
+  color:white;
+}
+
+.tag{
+  display:inline-block;
+  border:1px solid #ffffff66;
+  padding:9px 15px;
+  border-radius:30px;
+  color:#e5c681;
+  font-size:11px;
+  letter-spacing:2px;
+}
+
+.hero h1{
+  font-family:Georgia,serif;
+  font-size:clamp(44px,7vw,78px);
+  line-height:.98;
+  margin:20px 0;
+}
+
+.hero h1 span{
+  color:#d8b36d;
+}
+
+.hero p{
+  max-width:620px;
+  color:#eee;
+  font-size:18px;
+  line-height:1.7;
+}
+
+.buttons{
+  display:flex;
+  gap:12px;
+  margin-top:28px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  padding:14px 22px;
+  border-radius:8px;
+  font-weight:bold;
+  font-size:14px;
+}
+
+.gold{
+  background:var(--gold);
+  color:#fff;
+}
+
+.white{
+  background:#fff;
+  color:#111;
+}
+
+/* SECTIONS */
+
+section{
+  padding:75px 0;
+}
+
+.heading{
+  text-align:center;
+  max-width:700px;
+  margin:0 auto 40px;
+}
+
+.heading span{
+  color:var(--gold);
+  font-size:12px;
+  font-weight:bold;
+  letter-spacing:2px;
+}
+
+.heading h2{
+  font-family:Georgia,serif;
+  font-size:42px;
+  margin:10px 0;
+}
+
+.heading p{
+  color:var(--muted);
+  line-height:1.7;
+}
+
+/* ABOUT */
+
+.about{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:45px;
+  align-items:center;
+}
+
+.about img{
+  width:100%;
+  height:440px;
+  object-fit:cover;
+  border-radius:18px;
+}
+
+.about h2{
+  font-family:Georgia,serif;
+  font-size:42px;
+}
+
+.about p{
+  color:var(--muted);
+  line-height:1.8;
+}
+
+.points{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+  margin-top:25px;
+}
+
+.point{
+  background:white;
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:18px;
+}
+
+.point b{
+  display:block;
+  margin-bottom:7px;
+}
+
+.point small{
+  color:var(--muted);
+}
+
+/* GALLERY */
 
 .gallery{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
+  background:var(--light);
+}
+
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
+}
+
+.photo{
+  height:280px;
+  overflow:hidden;
+  border-radius:14px;
+  background:#ddd;
+  cursor:pointer;
+  position:relative;
+}
+
+.photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transition:.4s;
+}
+
+.photo:hover img{
+  transform:scale(1.06);
+}
+
+.photo-name{
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:35px 15px 13px;
+  color:white;
+  font-weight:bold;
+  background:linear-gradient(transparent,#000b);
+}
+
+/* CTA */
+
+.cta{
+  background:var(--dark);
+  color:white;
+}
+
+.cta-box{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:25px;
+}
+
+.cta h2{
+  font-family:Georgia,serif;
+  font-size:40px;
+}
+
+.cta p{
+  color:#bbb;
+  line-height:1.7;
+}
+
+/* CONTACT */
+
+.contact{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
 }
 
 .card{
-    background:white;
-    border-radius:12px;
-    overflow:hidden;
-    box-shadow:0 5px 20px rgba(0,0,0,.12);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 10px 25px rgba(0,0,0,.2);
-}
-
-.card img{
-    width:100%;
-    height:260px;
-    object-fit:cover;
-    display:block;
+  background:white;
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:30px;
 }
 
 .card h3{
-    padding:15px;
-    text-align:center;
-    font-size:18px;
+  font-family:Georgia,serif;
+  font-size:25px;
+  margin-top:0;
 }
 
-.about{
-    background:white;
-    padding:35px;
-    border-radius:12px;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-    text-align:center;
-    line-height:1.7;
+.detail{
+  padding:16px 0;
+  border-bottom:1px solid var(--border);
 }
 
-.contact{
-    margin-top:40px;
-    text-align:center;
+.detail:last-child{
+  border:0;
 }
 
-.contact a{
-    display:inline-block;
-    margin:8px;
-    padding:13px 22px;
-    background:#171717;
-    color:white;
-    text-decoration:none;
-    border-radius:7px;
+.detail small{
+  display:block;
+  color:var(--muted);
+  font-size:11px;
+  margin-bottom:5px;
 }
 
-.contact a:hover{
-    background:#d9a441;
-    color:#111;
-}
+/* FOOTER */
 
 footer{
-    margin-top:60px;
-    background:#171717;
-    color:white;
-    text-align:center;
-    padding:25px;
+  background:#0c0e0e;
+  color:#fff;
+  padding:30px 0;
 }
+
+.footer{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:15px;
+}
+
+.footer small{
+  color:#aaa;
+}
+
+/* LIGHTBOX */
+
+.lightbox{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:#000e;
+  z-index:999;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+
+.lightbox.show{
+  display:flex;
+}
+
+.lightbox img{
+  max-width:95%;
+  max-height:90%;
+  border-radius:10px;
+}
+
+.close{
+  position:fixed;
+  top:15px;
+  right:25px;
+  color:#fff;
+  font-size:40px;
+}
+
+/* MOBILE */
 
 @media(max-width:800px){
-    .header{
-        flex-direction:column;
-        text-align:center;
-    }
 
-    nav a{
-        margin:0 7px;
-    }
+  .top .container{
+    justify-content:center;
+    text-align:center;
+  }
 
-    .hero h1{
-        font-size:34px;
-    }
+  .menu{
+    display:none;
+  }
 
-    .gallery{
-        grid-template-columns:repeat(2,1fr);
-    }
+  .call{
+    padding:10px 13px;
+  }
+
+  .hero{
+    min-height:580px;
+  }
+
+  .hero h1{
+    font-size:50px;
+  }
+
+  .about,
+  .contact{
+    grid-template-columns:1fr;
+  }
+
+  .about img{
+    height:330px;
+  }
+
+  .points{
+    grid-template-columns:1fr;
+  }
+
+  .gallery-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .photo{
+    height:220px;
+  }
+
+  .cta-box{
+    display:block;
+  }
 }
 
-@media(max-width:500px){
-    .gallery{
-        grid-template-columns:1fr;
-    }
+@media(max-width:480px){
 
-    .card img{
-        height:240px;
-    }
+  .nav{
+    height:65px;
+  }
+
+  .logo b{
+    font-size:16px;
+  }
+
+  .hero{
+    min-height:560px;
+  }
+
+  .hero h1{
+    font-size:43px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  .gallery-grid{
+    grid-template-columns:1fr;
+  }
+
+  .photo{
+    height:270px;
+  }
+
+  .heading h2,
+  .about h2,
+  .cta h2{
+    font-size:32px;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<header>
-<div class="header">
-<div>
-<div class="logo">SUN STONES</div>
-<div class="tagline">Quality that stands the test of time</div>
+<!-- TOP -->
+<div class="top">
+  <div class="container">
+    <span>Premium Granite & Quartz • Hyderabad</span>
+    <span>Quality that stands the test of time</span>
+  </div>
 </div>
 
-<nav>
-<a href="#home">Home</a>
-<a href="#granites">Granites</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</nav>
+<!-- HEADER -->
+<header>
+<div class="container nav">
+
+  <a href="#" class="logo">
+    <div class="logo-box">SS</div>
+    <div>
+      <b>Sun Stones</b>
+      <small>HYDERABAD</small>
+    </div>
+  </a>
+
+  <nav class="menu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#granites">Granites</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <a class="call" href="tel:7306288582">
+    📞 Call Now
+  </a>
+
 </div>
 </header>
 
+<!-- HERO -->
 <section class="hero" id="home">
+
+<div class="container">
+<div class="hero-content">
+
+  <div class="tag">PREMIUM STONE COLLECTION</div>
+
+  <h1>
+    Stone that makes
+    <span>spaces timeless.</span>
+  </h1>
+
+  <p>
+    Explore premium natural granite slabs for kitchens,
+    flooring, stairs, countertops and beautiful interiors.
+  </p>
+
+  <div class="buttons">
+
+    <a class="btn gold" href="#granites">
+      View Granite Collection
+    </a>
+
+    <a class="btn white"
+       href="https://wa.me/917306288582?text=Hello%20Sun%20Stones,%20I%20want%20to%20know%20about%20your%20granite%20collection."
+       target="_blank">
+       WhatsApp Us
+    </a>
+
+  </div>
+
+</div>
+</div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+
+<div class="container about">
+
+  <img src="IMG-20260729-WA0002.jpg"
+       alt="Sun Stones Granite">
+
+  <div>
+
+    <span style="color:#b88a3b;font-size:12px;font-weight:bold;letter-spacing:2px;">
+      SUN STONES HYDERABAD
+    </span>
+
+    <h2>
+      Quality that stands the test of time.
+    </h2>
+
+    <p>
+      Discover a beautiful collection of natural granite slabs
+      selected for modern homes, kitchens, stairs, flooring,
+      countertops and commercial projects.
+    </p>
+
+    <div class="points">
+
+      <div class="point">
+        <b>◆ Premium</b>
+        <small>Selected natural stones</small>
+      </div>
+
+      <div class="point">
+        <b>◈ Durable</b>
+        <small>Built for long-lasting use</small>
+      </div>
+
+      <div class="point">
+        <b>✦ Collection</b>
+        <small>Multiple colours & patterns</small>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</section>
+
+<!-- GRANITE GALLERY -->
+<section class="gallery" id="granites">
+
+<div class="container">
+
+<div class="heading">
+
+  <span>OUR COLLECTION</span>
+
+  <h2>Granite Slabs</h2>
+
+  <p>
+    Browse our granite collection.
+    Tap any image to view it in full screen.
+  </p>
+
+</div>
+
+<div class="gallery-grid" id="gallery"></div>
+
+</div>
+
+</section>
+
+<!-- CTA -->
+<section class="cta">
+
+<div class="container cta-box">
+
 <div>
-<h1>Premium Granites</h1>
-<p>Beautiful Stones • Superior Quality • Lasting Elegance</p>
+  <span style="color:#d8b36d;font-size:12px;font-weight:bold;letter-spacing:2px;">
+    NEED A QUOTE?
+  </span>
+
+  <h2>Let's find the right stone.</h2>
+
+  <p>
+    Send us the granite photo/name and required quantity
+    on WhatsApp for enquiry.
+  </p>
 </div>
+
+<div class="buttons">
+
+<a class="btn gold" href="tel:7306288582">
+  📞 7306288582
+</a>
+
+<a class="btn white"
+href="https://wa.me/917306288582?text=Hello%20Sun%20Stones,%20I%20need%20a%20granite%20quote."
+target="_blank">
+  WhatsApp
+</a>
+
+</div>
+
+</div>
+
 </section>
 
-<section class="container" id="granites">
+<!-- CONTACT -->
+<section id="contact">
 
-<div class="section-title">
-<h2>Our Granite Collection</h2>
-<p>Explore our premium collection of granite slabs</p>
-</div>
+<div class="container">
 
-<div class="gallery">
+<div class="heading">
 
-<div class="card">
-<img src="IMG-20260729-WA0001.jpg" alt="Granite">
-<h3>Premium Granite</h3>
-</div>
+<span>GET IN TOUCH</span>
 
-<div class="card">
-<img src="IMG-20260729-WA0002.jpg" alt="Granite">
-<h3>Granite Collection</h3>
-</div>
+<h2>Contact Sun Stones</h2>
 
-<div class="card">
-<img src="IMG-20260729-WA0003.jpg" alt="Granite">
-<h3>Natural Granite</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0004.jpg" alt="Granite">
-<h3>Premium Stone</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0005.jpg" alt="Granite">
-<h3>Granite Slab</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0006.jpg" alt="Granite">
-<h3>Natural Stone</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0007.jpg" alt="Granite">
-<h3>Premium Collection</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0009.jpg" alt="Granite">
-<h3>Granite Slabs</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0011.jpg" alt="Granite">
-<h3>Elegant Granite</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0012.jpg" alt="Granite">
-<h3>Natural Collection</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0013.jpg" alt="Granite">
-<h3>Premium Stone</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0018.jpg" alt="Granite">
-<h3>Granite Collection</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0019.jpg" alt="Granite">
-<h3>Granite Slab</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0020.jpg" alt="Granite">
-<h3>Premium Granite</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0021.jpg" alt="Granite">
-<h3>Natural Granite</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0022.jpg" alt="Granite">
-<h3>Premium Stone</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0023.jpg" alt="Granite">
-<h3>Granite Collection</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0024.jpg" alt="Granite">
-<h3>Elegant Stone</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0025.jpg" alt="Granite">
-<h3>Premium Granite</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0026.jpg" alt="Granite">
-<h3>Natural Stone</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0027.jpg" alt="Granite">
-<h3>Granite Slabs</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0028.jpg" alt="Granite">
-<h3>Premium Collection</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0029.jpg" alt="Granite">
-<h3>Natural Granite</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0030.jpg" alt="Granite">
-<h3>Premium Stone</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0031.jpg" alt="Granite">
-<h3>Granite Collection</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0032.jpg" alt="Granite">
-<h3>Natural Stone</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0033.jpg" alt="Granite">
-<h3>Premium Granite</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0034.jpg" alt="Granite">
-<h3>Granite Slab</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0035.jpg" alt="Granite">
-<h3>Elegant Granite</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0036.jpg" alt="Granite">
-<h3>Natural Collection</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0037.jpg" alt="Granite">
-<h3>Premium Stone</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0038.jpg" alt="Granite">
-<h3>Granite Collection</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0039.jpg" alt="Granite">
-<h3>Premium Granite</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0040.jpg" alt="Granite">
-<h3>Natural Granite</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0041.jpg" alt="Granite">
-<h3>Granite Slab</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0042.jpg" alt="Granite">
-<h3>Premium Collection</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0043.jpg" alt="Granite">
-<h3>Natural Stone</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0044.jpg" alt="Granite">
-<h3>Premium Stone</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0045.jpg" alt="Granite">
-<h3>Granite Collection</h3>
-</div>
-
-<div class="card">
-<img src="IMG-20260729-WA0051.jpg" alt="Granite">
-<h3>Premium Granite</h3>
-</div>
-
-<div class="card">
-<img src="IMG_20260824_210752.jpg" alt="Granite">
-<h3>Latest Collection</h3>
-</div>
-
-<div class="card">
-<img src="IMG_20260824_210805.jpg" alt="Granite">
-<h3>Latest Granite</h3>
-</div>
-
-</div>
-</section>
-
-<section class="container" id="about">
-<div class="section-title">
-<h2>About Sun Stones</h2>
-</div>
-
-<div class="about">
 <p>
-We provide premium quality granite and natural stones
-for homes, offices, commercial spaces and interior projects.
-Our collection combines durability, elegance and timeless beauty.
+For granite enquiries, availability and pricing.
 </p>
+
 </div>
+
+<div class="contact">
+
+<div class="card">
+
+<h3>Contact Details</h3>
+
+<div class="detail">
+<small>PHONE / WHATSAPP</small>
+<a href="tel:7306288582">7306288582</a>
+</div>
+
+<div class="detail">
+<small>EMAIL</small>
+<a href="mailto:sandeepsandeep0000001@gmail.com">
+sandeepsandeep0000001@gmail.com
+</a>
+</div>
+
+<div class="detail">
+<small>LOCATION</small>
+Hyderabad, Telangana
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>Quick Enquiry</h3>
+
+<p style="color:#70706b;line-height:1.7;">
+For a fast response, WhatsApp us with the
+granite photo/name, size and required quantity.
+</p>
+
+<a class="btn gold"
+href="https://wa.me/917306288582?text=Hello%20Sun%20Stones,%20I%20need%20a%20granite%20quote."
+target="_blank">
+Start WhatsApp Chat
+</a>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<section class="container contact" id="contact">
-<h2>Get In Touch</h2>
-
-<a href="tel:+919999999999">📞 Call Us</a>
-<a href="https://wa.me/919999999999">💬 WhatsApp</a>
-</section>
-
+<!-- FOOTER -->
 <footer>
-<p>© 2026 Sun Stones Hyderabad</p>
-<p>Quality that stands the test of time</p>
+
+<div class="container footer">
+
+<div>
+<strong>Sun Stones Hyderabad</strong><br>
+<small>Granite & Quartz</small>
+</div>
+
+<small>
+© 2026 Sun Stones. All rights reserved.
+</small>
+
+</div>
+
 </footer>
 
+
+<!-- IMAGE FULLSCREEN -->
+<div class="lightbox" id="lightbox" onclick="closeImage()">
+
+<div class="close">×</div>
+
+<img id="bigImage" src="" alt="Granite">
+
+</div>
+
+
+<script>
+
+/* ALL YOUR GRANITE PHOTOS */
+
+const photos = [
+
+"IMG-20260729-WA0001.jpg",
+"IMG-20260729-WA0002.jpg",
+"IMG-20260729-WA0003.jpg",
+"IMG-20260729-WA0004.jpg",
+"IMG-20260729-WA0005.jpg",
+"IMG-20260729-WA0006.jpg",
+"IMG-20260729-WA0007.jpg",
+"IMG-20260729-WA0009.jpg",
+"IMG-20260729-WA0011.jpg",
+"IMG-20260729-WA0012.jpg",
+"IMG-20260729-WA0013.jpg",
+"IMG-20260729-WA0018.jpg",
+"IMG-20260729-WA0019.jpg",
+"IMG-20260729-WA0020.jpg",
+"IMG-20260729-WA0021.jpg",
+"IMG-20260729-WA0022.jpg",
+"IMG-20260729-WA0023.jpg",
+"IMG-20260729-WA0024.jpg",
+"IMG-20260729-WA0025.jpg",
+"IMG-20260729-WA0026.jpg",
+"IMG-20260729-WA0027.jpg",
+"IMG-20260729-WA0028.jpg",
+"IMG-20260729-WA0029.jpg",
+"IMG-20260729-WA0030.jpg",
+"IMG-20260729-WA0031.jpg",
+"IMG-20260729-WA0032.jpg",
+"IMG-20260729-WA0033.jpg",
+"IMG-20260729-WA0034.jpg",
+"IMG-20260729-WA0035.jpg",
+"IMG-20260729-WA0036.jpg",
+"IMG-20260729-WA0037.jpg",
+"IMG-20260729-WA0038.jpg",
+"IMG-20260729-WA0039.jpg",
+"IMG-20260729-WA0040.jpg",
+"IMG-20260729-WA0041.jpg",
+"IMG-20260729-WA0042.jpg",
+"IMG-20260729-WA0043.jpg",
+"IMG-20260729-WA0044.jpg",
+"IMG-20260729-WA0045.jpg",
+"IMG-20260729-WA0051.jpg",
+"IMG_20260824_210752.jpg",
+"IMG_20260824_210805.jpg"
+
+];
+
+const gallery = document.getElementById("gallery");
+
+photos.forEach((photo,index)=>{
+
+  const box = document.createElement("div");
+
+  box.className = "photo";
+
+  box.innerHTML = `
+    <img
+      src="${photo}"
+      alt="Sun Stones Granite ${index+1}"
+      loading="lazy"
+      onerror="this.parentElement.remove()"
+    >
+
+    <div class="photo-name">
+      Granite Collection ${String(index+1).padStart(2,"0")}
+    </div>
+  `;
+
+  box.onclick = function(){
+    openImage(photo);
+  };
+
+  gallery.appendChild(box);
+
+});
+
+
+function openImage(photo){
+
+  document.getElementById("bigImage").src = photo;
+
+  document
+  .getElementById("lightbox")
+  .classList.add("show");
+
+}
+
+
+function closeImage(){
+
+  document
+  .getElementById("lightbox")
+  .classList.remove("show");
+
+}
+
+
+document.addEventListener("keydown",function(e){
+
+  if(e.key === "Escape"){
+    closeImage();
+  }
+
+});
+
+</script>
+
 </body>
-  </html>
+    </html>
