@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sun Stones Hyderabad — granite, granite tiles and quartz. Hayathnagar, Hyderabad. Serving since May 2017.">
+<title>Sun Stones Hyderabad | Granite & Quartz</title>
+<style>
+:root{
+  --ink:#172027; --muted:#657078; --stone:#f5f1ea; --white:#fff;
+  --gold:#c28a3d; --gold2:#e1b36b; --dark:#11181d; --line:#e5ddd1;
+  --shadow:0 18px 50px rgba(16,24,29,.10);
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,92%);margin:auto}
+.topbar{background:var(--dark);color:#fff;font-size:13px}
+.topbar .container{display:flex;justify-content:space-between;gap:20px;padding:9px 0}
+nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.navin{display:flex;align-items:center;justify-content:space-between;min-height:76px;gap:25px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.08em}
+.logoMark{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#d9a45b,#9d6624);color:#fff;font-weight:900;box-shadow:inset 0 0 0 3px rgba(255,255,255,.35)}
+.logo small{display:block;font-size:10px;letter-spacing:.16em;color:var(--muted);font-weight:700}
+.links{display:flex;gap:25px;font-size:14px;font-weight:700}
+.links a:hover{color:var(--gold)}
+.navcta{background:var(--ink);color:#fff;padding:11px 17px;border-radius:999px;font-size:13px;font-weight:800}
+.hero{position:relative;min-height:650px;display:grid;align-items:center;overflow:hidden;background:#171d21}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,14,17,.86),rgba(9,14,17,.50),rgba(9,14,17,.18)),url('images/1000448900.jpg') center/cover}
+.hero .container{position:relative;color:#fff;padding:90px 0}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(255,255,255,.28);padding:8px 12px;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+h1{font-size:clamp(44px,6vw,78px);line-height:1.02;margin:22px 0 16px;max-width:800px;letter-spacing:-.04em}
+.hero p{max-width:650px;font-size:18px;color:#e8ecee}
+.slogan{font-family:Georgia,serif;font-size:20px;color:#e0b16b;margin:22px 0}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{padding:14px 20px;border-radius:10px;font-weight:800;font-size:14px;display:inline-block}
+.primary{background:var(--gold);color:#fff}.secondary{border:1px solid rgba(255,255,255,.35);color:#fff}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:55px;max-width:700px}
+.stat{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.16);border-radius:14px;padding:16px 18px}
+.stat b{display:block;font-size:22px}.stat span{font-size:12px;color:#dce1e3}
+section{padding:90px 0}
+.sectionHead{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:38px}
+.kicker{color:var(--gold);font-size:12px;font-weight:900;letter-spacing:.14em;text-transform:uppercase}
+h2{font-size:clamp(30px,4vw,48px);line-height:1.08;margin:8px 0 0;letter-spacing:-.03em}
+.lead{color:var(--muted);max-width:600px}
+.products{background:var(--stone)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 8px 24px rgba(30,35,38,.04);transition:.25s}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.card img{width:100%;height:205px;object-fit:cover;display:block}
+.cardbody{padding:18px}.tag{font-size:10px;color:var(--gold);font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+.card h3{margin:6px 0 4px;font-size:20px}.card p{margin:0;color:var(--muted);font-size:13px}
+.palette{display:flex;flex-wrap:wrap;gap:9px;margin-top:30px}
+.chip{background:#fff;border:1px solid #dcd2c4;padding:9px 12px;border-radius:999px;font-size:12px;font-weight:700}
+.about{display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center}
+.aboutImg{border-radius:24px;overflow:hidden;box-shadow:var(--shadow)}
+.aboutImg img{width:100%;display:block;height:500px;object-fit:cover}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:30px}
+.feature{border-top:2px solid var(--line);padding-top:14px}.feature b{display:block}.feature span{font-size:13px;color:var(--muted)}
+.thickness{background:var(--dark);color:#fff}
+.thicknessBox{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.big18{font-size:clamp(80px,13vw,160px);line-height:.85;color:var(--gold2);font-weight:900;letter-spacing:-.08em}
+.thickness p{color:#c9d0d4}.note{border:1px solid rgba(255,255,255,.16);border-radius:18px;padding:22px;background:rgba(255,255,255,.05)}
+.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-auto-rows:220px;gap:14px}
+.gallery img{width:100%;height:100%;object-fit:cover;border-radius:16px}
+.gallery img:first-child{grid-row:span 2}
+.contact{background:linear-gradient(135deg,#f7f2e9,#eee6da)}
+.contactGrid{display:grid;grid-template-columns:1.1fr .9fr;gap:30px}
+.contactCard{background:#fff;border-radius:20px;padding:30px;box-shadow:var(--shadow)}
+.contactItem{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+.contactItem:last-child{border-bottom:0}.icon{width:38px;height:38px;border-radius:10px;background:#f1e3cf;display:grid;place-items:center;color:#9b682c;font-weight:900;flex:none}
+.contactItem b{display:block}.contactItem span{color:var(--muted);font-size:14px}
+.cta{background:var(--ink);color:#fff;border-radius:22px;padding:38px}
+.cta h3{font-size:32px;line-height:1.1;margin:0 0 10px}.cta p{color:#c8d0d4}
+footer{background:#0d1216;color:#aeb8bd;padding:28px 0;font-size:12px}
+.footerin{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.mobileMenu{display:none}
+@media(max-width:900px){
+  .links{display:none}.mobileMenu{display:block}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .about,.thicknessBox,.contactGrid{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:190px}
+  .gallery img:first-child{grid-row:span 1;grid-column:span 2}
+}
+@media(max-width:560px){
+  .topbar .container{flex-direction:column;gap:2px}
+  .hero{min-height:700px}.stats{grid-template-columns:1fr}
+  section{padding:65px 0}.grid{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr}.gallery img:first-child{grid-column:auto}
+  .features{grid-template-columns:1fr}
+  h1{font-size:47px}
+}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="container"><span>Serving Hyderabad since May 2017</span><span>Open 24 Hours • Call 7306288582</span></div></div>
+
+<nav>
+  <div class="container navin">
+    <a class="logo" href="#home"><span class="logoMark">SS</span><span>SUN STONES<small>HYDERABAD</small></span></a>
+    <div class="links">
+      <a href="#products">Products</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+    </div>
+    <a class="navcta" href="tel:+917306288582">Call Now</a>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="container">
+    <span class="eyebrow">Granite • Tiles • Quartz</span>
+    <h1>Natural stone that makes spaces last.</h1>
+    <p>Sun Stones brings a wide collection of granite slabs, granite tiles and quartz for homes, commercial spaces, kitchens and architectural projects.</p>
+    <div class="slogan">Quality that stand the test of time.</div>
+    <div class="btns">
+      <a class="btn primary" href="tel:+917306288582">Call 7306288582</a>
+      <a class="btn secondary" href="mailto:sandeepsandeep0000001@gmail.com">Email Us</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>Since 2017</b><span>Trusted stone business</span></div>
+      <div class="stat"><b>18 mm</b><span>Regular thickness</span></div>
+      <div class="stat"><b>24 Hours</b><span>Open every day</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="products" id="products">
+  <div class="container">
+    <div class="sectionHead"><div><div class="kicker">Our collection</div><h2>Granites for every style.</h2></div><p class="lead">From warm browns and pinks to deep blacks and elegant whites, explore our in-stock varieties. Other thicknesses are available as per order.</p></div>
+    <div class="grid">
+      <article class="card"><img src="images/1000448898.jpg" alt="Tan Brown granite"><div class="cardbody"><div class="tag">Granite</div><h3>Tan Brown</h3><p>Rich brown base with natural black and warm mineral movement.</p></div></article>
+      <article class="card"><img src="images/1000448910.jpg" alt="Light patterned granite"><div class="cardbody"><div class="tag">Granite</div><h3>Tan Blue</h3><p>Cool-toned natural pattern for a refined architectural finish.</p></div></article>
+      <article class="card"><img src="images/1000448896.jpg" alt="Blue granite"><div class="cardbody"><div class="tag">Granite</div><h3>Safari Blue</h3><p>Distinctive blue-grey movement with a natural stone character.</p></div></article>
+      <article class="card"><img src="images/1000448888.jpg" alt="Black granite"><div class="cardbody"><div class="tag">Granite</div><h3>Z Black</h3><p>Deep dark tone for bold countertops, walls and flooring.</p></div></article>
+      <article class="card"><img src="images/1000448890.jpg" alt="Gold and black granite"><div class="cardbody"><div class="tag">Granite</div><h3>Bhama Gold</h3><p>Black stone with striking golden natural movement.</p></div></article>
+      <article class="card"><img src="images/1000448892.jpg" alt="Grey and pink granite"><div class="cardbody"><div class="tag">Granite</div><h3>Reddish / Rosy Pink</h3><p>Warm natural tones with expressive grain and texture.</p></div></article>
+      <article class="card"><img src="images/1000448902.jpg" alt="White grey granite"><div class="cardbody"><div class="tag">Granite</div><h3>River White</h3><p>Light background with subtle grey movement for modern spaces.</p></div></article>
+      <article class="card"><img src="images/1000448894.jpg" alt="Dark granite"><div class="cardbody"><div class="tag">Granite</div><h3>Black Pearl</h3><p>Dark, elegant surface with natural mineral detailing.</p></div></article>
+    </div>
+    <div class="palette">
+      <span class="chip">Royal Blue</span><span class="chip">Coffee Brown</span><span class="chip">Chima Pink</span><span class="chip">P White</span><span class="chip">M White</span><span class="chip">Shell White</span><span class="chip">T Black</span><span class="chip">Sira Grey</span><span class="chip">Mudgal Grey</span><span class="chip">Antique</span><span class="chip">Paradise</span><span class="chip">Vishcon White</span><span class="chip">Kupam</span><span class="chip">Moon White</span><span class="chip">Star White</span><span class="chip">SK Blue</span><span class="chip">Chida White</span><span class="chip">China White</span><span class="chip">All Types Available</span>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container about">
+    <div class="aboutImg"><img src="images/1000448900.jpg" alt="Sun Stones granite collection"></div>
+    <div>
+      <div class="kicker">Sun Stones Hyderabad</div>
+      <h2>A stone collection built for real projects.</h2>
+      <p class="lead">Operating since May 2017, Sun Stones offers granite, granite tiles and quartz from its Hayathnagar location on the Hyderabad–Vijayawada Highway.</p>
+      <div class="features">
+        <div class="feature"><b>Wide Selection</b><span>Multiple colours, patterns and granite varieties.</span></div>
+        <div class="feature"><b>Regular 18 mm</b><span>Standard thickness available for regular requirements.</span></div>
+        <div class="feature"><b>Custom Thickness</b><span>Thickness above regular size available as per order.</span></div>
+        <div class="feature"><b>24-Hour Availability</b><span>Open 24 hours for enquiries and customer visits.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="thickness">
+  <div class="container thicknessBox">
+    <div><div class="kicker">Thickness</div><div class="big18">18<span style="font-size:.28em;letter-spacing:0"> mm</span></div><p>Regular granite slab thickness. Need something thicker? Other thicknesses can be arranged as per your order requirement.</p></div>
+    <div class="note"><b>Granite • Granite Tiles • Quartz</b><p>Tell us your project requirement, preferred colour, quantity and thickness. Our collection covers everyday and statement finishes for residential and commercial applications.</p><a class="btn primary" href="https://wa.me/917306288582?text=Hello%20Sun%20Stones%2C%20I%20want%20to%20know%20about%20your%20granite%20and%20quartz%20collection.">WhatsApp Enquiry</a></div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="container">
+    <div class="sectionHead"><div><div class="kicker">From our yard</div><h2>See the stone in its natural form.</h2></div><p class="lead">Actual slab photographs from the collection. Natural stone varies in colour and movement, making every slab unique.</p></div>
+    <div class="gallery">
+      <img src="images/1000448900.jpg" alt="Granite slabs in Sun Stones yard">
+      <img src="images/1000448910.jpg" alt="Light granite slab">
+      <img src="images/1000448898.jpg" alt="Brown granite slabs">
+      <img src="images/1000448890.jpg" alt="Gold black granite">
+      <img src="images/1000448883.jpg" alt="Dark black granite slab">
+      <img src="images/1000448896.jpg" alt="Blue grey granite">
+      <img src="images/1000448902.jpg" alt="White grey granite slab">
+      <img src="images/1000448892.jpg" alt="Rosy pink granite slab">
+      <img src="images/1000448894.jpg" alt="Black Pearl granite slab">
+      <img src="images/1000448888.jpg" alt="Black granite slab">
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container contactGrid">
+    <div class="contactCard">
+      <div class="kicker">Visit / Contact</div><h2>Let's find your stone.</h2>
+      <div class="contactItem"><div class="icon">☎</div><div><b>Phone</b><span><a href="tel:+917306288582">7306288582</a></span></div></div>
+      <div class="contactItem"><div class="icon">✉</div><div><b>Email</b><span><a href="mailto:sandeepsandeep0000001@gmail.com">sandeepsandeep0000001@gmail.com</a></span></div></div>
+      <div class="contactItem"><div class="icon">⌖</div><div><b>Address</b><span>Hyderabad Vijayawada Highway, Hayathnagar, Hyderabad, 501505</span></div></div>
+      <div class="contactItem"><div class="icon">24</div><div><b>Hours</b><span>Open 24 hours</span></div></div>
+    </div>
+    <div class="cta">
+      <div class="kicker">Sun Stones</div>
+      <h3>Quality that stand the test of time.</h3>
+      <p>Granite • Granite Tiles • Quartz<br>Serving customers since May 2017.</p>
+      <div class="btns"><a class="btn primary" href="tel:+917306288582">Call Now</a><a class="btn secondary" href="https://wa.me/917306288582">WhatsApp</a></div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="container footerin"><span>© Sun Stones Hyderabad. All rights reserved.</span><span>Hayathnagar • Hyderabad • 501505</span></div></footer>
+</body>
+</html>
